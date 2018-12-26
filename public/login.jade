@@ -1,0 +1,15 @@
+html
+  head
+  form(action="/login" method="post")
+    body
+        h1 LOGIN
+        p
+          input(type="text" name="id" placeholder="ID")
+        p
+          input(type="password" name="pwd" placeholder="PASSWORD")
+        p
+          input(type="submit" value="Login")
+          -for(var i = 1;i<=12;i++){
+            &nbsp
+          -}
+          input(type="button" value="Signup" onclick="location.href='join'")
